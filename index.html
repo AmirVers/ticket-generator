@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Frontend Mentor | Conference ticket generator</title>
+	</head>
+	<body>
+		<section class="main-section">
+			<div class="container">
+				<header class="header">
+					<div class="header__logo">
+						<img
+							src="./assets/images/logo-full.svg"
+							alt="logo"
+							class="header__logo-img"
+						/>
+					</div>
+					<div class="header__description">
+						<h1 class="header__description-title">
+							Your Journey to Coding Conf 2025 Starts Here!
+						</h1>
+						<p class="header__description-paragraph">
+							Secure your spot at next year's biggest coding conference.
+						</p>
+					</div>
+				</header>
+
+				<main class="main">
+					<div class="main__ticket-form">
+						<div class="main__ticket-avatar">
+							<h4 class="main__ticket-avatar__title">Upload Avatar</h4>
+							<label for="input-file">
+								<input type="file" id="input-file" accept="image/*" hidden />
+								<div class="img-view">
+									<img
+										src="/assets/images/icon-upload.svg"
+										alt="upload"
+										class="img-view__img"
+									/>
+									<p class="img-view__desc">Drag and drop or click to upload</p>
+								</div>
+								<div class="input-file__caution">
+									<img
+										src="/assets/images/icon-info.svg"
+										alt="info"
+										class="caution-info"
+									/>
+									<p class="caution-desc">
+										Upload your photo(JPG or PNG, max size: 500KB).
+									</p>
+								</div>
+							</label>
+						</div>
+						<form class="ticket-form">
+							<label for="full-name">Full Name</label>
+							<input type="text" id="full-name" placeholder="" />
+
+							<label for="email">Email Address</label>
+							<input type="email" id="email" placeholder="example@email.com" />
+							<div class="email-warning">
+								<img
+									src="/assets/images/icon-info.svg"
+									alt="info"
+									class="email-caution-icon"
+								/>
+								<p class="email-caution-text"></p>
+							</div>
+							<label for="github">GitHub Username</label>
+							<input type="text" id="github" placeholder="@yourusername" />
+
+							<button type="submit">Generate My Ticket</button>
+						</form>
+					</div>
+				</main>
+				<footer class="footer">
+					<div class="footer-content"">
+						<span>Challenge by</span>
+						<a
+							href="https://www.frontendmentor.io?ref=challenge"
+							class="footer-link"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Frontend Mentor
+						</a>
+						<span className="separator">•</span>
+						<span>Coded by</span>
+						<a
+							href="https://github.com/AmirVers"
+							class="footer-link footer-author"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Amir
+							<Github
+								class="github-icon"
+							/>
+						</a>
+					</div>
+				</footer>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
