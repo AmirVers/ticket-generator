@@ -386,6 +386,7 @@ input {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+	flex-wrap: wrap;
 }
 
 .footer-link {
@@ -410,12 +411,43 @@ input {
 }
 
 .github-icon {
-	width: 1rem;
-	height: 1rem;
+	margin-left: 5px;
+	width: 18px;
 	transition: transform 0.2s ease-in-out;
 }
 
 .footer-author:hover .github-icon {
 	transform: scale(1.1);
 }
-/* Mobile */
+@media screen and (max-width: 1024px) {
+	.footer {
+		margin-top: 24px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		padding: 10px 15px;
+		font-size: 14px;
+	}
+	.footer-content {
+		flex-direction: row;
+		align-items: center;
+		gap: 5px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.footer {
+		padding: 8px 12px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.footer {
+		position: relative;
+		padding: 7px 8px;
+		font-size: 13px;
+	}
+}
